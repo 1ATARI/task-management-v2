@@ -66,16 +66,24 @@ you can see activity of users (online - offline)
 <a href="https://linkedin.com/in/youssef-mohamed-8b0718240/" target="_blank">
 <img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 5px;" />
 </a>  
-</div>  
+</div>
+
   **Dashboard**  
 
 ![Screenshot (13)](https://user-images.githubusercontent.com/79675383/221198269-bd9505c7-fb56-4990-8239-4c9d0179948e.png)
 
   **User index**  
+  
   ![Screenshot (12)](https://user-images.githubusercontent.com/79675383/221198460-c5128c1f-4644-4910-b973-fbb0cac5c863.png)
+  
   **View user**  
+  
   ![Screenshot (14)](https://user-images.githubusercontent.com/79675383/221198536-85bc69ad-d178-4404-99c9-2c14dc820783.png)
-  **Department index** 
+  
+  **Department index**
+  
   ![Screenshot (11)](https://user-images.githubusercontent.com/79675383/221198698-7da79285-1167-423c-b485-8f6919d035be.png)
+  
   **Task index**
+  
   ![Screenshot (10)](https://user-images.githubusercontent.com/79675383/221198899-ed5c6dcd-5010-48d1-b54f-10509dfa53c8.png)
