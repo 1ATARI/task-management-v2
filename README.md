@@ -1,66 +1,81 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# <div align="center">task management V2</div>  
+  
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**🔭it's version 2 of task management with additions<br>
+departments/tasks/users(with roles)<br>**  
+  
 
-## About Laravel
+Each user has a role and department each role can do specific CRUD for departments/tasks/users  
+  
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Tasks created for a specific department and it has state (completed - in progress)   
+  
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+if you delete department the users of this department automatically attach to "on hold" department this department can't be deleted by any role or user     
+  
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+you can see activity of users (online - offline)  
+  
 
-## Learning Laravel
+### **Roles**  
+  
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- • Super admin who is in control of the project and has all permissions 
+            Users => 'c,r,u,d',
+            Departments => 'c,r,u,d',
+            Tasks =>  'c,r,u,d',  
+  
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- Admin who has permission like super admin but can’t modify super admin/admin 
+            Users => 'c,r,u,d',
+            Departments => 'c,r,u,d',
+            Tasks =>  'c,r,u,d',  
+  
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- Manager of the department who can only see his department, department users, department tasks
+            Users  => 'r',
+            Tasks =>  'c,r,u,d',  
+  
 
-## Laravel Sponsors
+ User who can only update and see tasks 
+            Tasks=>'r,u'  
+  
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### Libraries and plugins   
+  
 
-### Premium Partners
+- Laratrust for roles and permissions   
+  
+  
+- PHPFlasher for notifications 
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
 
-## Contributing
+- ckeditor for customize text  
+  
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- Gentelella - master Bootstrap Admin Template by Colorlib  
+  
 
-## Code of Conduct
+**<div align="center">you should run "php artisan db:seed" before you start</div>**  
+  
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+<div align="center">
+<a href="https://github.com/1ATARI" target="_blank">
+<img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
+</a>
+<a href="https://linkedin.com/in/youssef-mohamed-8b0718240/" target="_blank">
+<img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 5px;" />
+</a>  
+</div>  
+  **Dashboard**  
 
-## Security Vulnerabilities
+![Screenshot (13)](https://user-images.githubusercontent.com/79675383/221198269-bd9505c7-fb56-4990-8239-4c9d0179948e.png)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+  **User index**  
+  ![Screenshot (12)](https://user-images.githubusercontent.com/79675383/221198460-c5128c1f-4644-4910-b973-fbb0cac5c863.png)
+  **View user**  
+  ![Screenshot (14)](https://user-images.githubusercontent.com/79675383/221198536-85bc69ad-d178-4404-99c9-2c14dc820783.png)
+  **Department index** 
+  ![Screenshot (11)](https://user-images.githubusercontent.com/79675383/221198698-7da79285-1167-423c-b485-8f6919d035be.png)
+  **Task index**
+  ![Screenshot (10)](https://user-images.githubusercontent.com/79675383/221198899-ed5c6dcd-5010-48d1-b54f-10509dfa53c8.png)
